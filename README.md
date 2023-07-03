@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img src="src/metrics_app_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="src/metrics_app_logo.png" alt="logo" width="100"  height="auto" />
   <br/>
 
   <h3><b>Metrics Webapp</b></h3>
