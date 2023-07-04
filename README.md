@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img src="murple_logo.png" alt="logo" width="100"  height="auto" />
+  <img src="metrics_app_logo.png" alt="logo" width="120"  height="auto" />
   <br/>
 
   <h3><b>Metrics Webapp</b></h3>
@@ -58,9 +58,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Rocket Reservation**
-- **Joining Mission**
-- **Profile**
+- **Metrices**
+- **World Data**
+- **News**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +160,8 @@ If you like this project please give it a ⭐️. Your support is greatly apprec
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for giving us this opportunity to build this amazing project. I would also like to thank my peers for their support and encouragement throughout this project. I would also like to thank my mentors for their guidance and support. Lastly, I would like to thank the open-source community for their contribution to the open-source ecosystem. Without their contribution, creating this project would not have been possible. Thank you all. 🙏
+I would like to thank Microverse for giving me this opportunity to build this amazing project. 
+I would also like to thank **Nelson Sakwa** for the wonderful design template. I would also like to thank my mentors for their guidance and support. Lastly, I would like to thank the open-source community for their contribution to the open-source ecosystem. Without their contribution, creating this project would not have been possible. Thank you all. 🙏
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
