@@ -19,7 +19,7 @@ const MealsDetail = () => {
   return (
     <div className="table-responsive">
       {/* <h2>Meal Category Details</h2> */}
-      <Table striped bordered hover style={{ width: '50rem' }} className="mobile-version">
+      <Table striped bordered hover className="mobile-version">
         <tbody>
           <tr>
             <td rowSpan="2" className="table-image-cell">
@@ -29,12 +29,12 @@ const MealsDetail = () => {
                 className="thumbnail-image"
               />
             </td>
-            <td>Category Name</td>
-            <td>{selectedCategory.strCategory}</td>
+            <td className="left-aligned"><strong>Name</strong></td>
+            <td className="left-aligned">{selectedCategory.strCategory}</td>
           </tr>
           <tr>
-            <td>Description</td>
-            <td>{selectedCategory.strCategoryDescription}</td>
+            <td className="left-aligned"><strong>Description</strong></td>
+            <td className="left-aligned">{selectedCategory.strCategoryDescription}</td>
           </tr>
         </tbody>
       </Table>

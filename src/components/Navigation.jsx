@@ -14,7 +14,7 @@ const Navigation = () => {
   }
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar variant="dark">
       <Nav className="mr-auto">
         <Nav.Link as={Link} to="/"><IoIosArrowBack fill="white" /></Nav.Link>
       </Nav>
