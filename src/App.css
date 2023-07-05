@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap');
 
-/* @font-face{
-  font-family: 'Gill Sans 2';
-  src: url('./fonts/Gill\ Sans.otf') format('opentype');
-} */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  overflow: hidden;
+}
+
+.body {
+  overflow-x: hidden;
 }
 
 .controlFont {
@@ -47,8 +45,109 @@
   text-decoration: none;
 }
 
+.meals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.meal-card {
+  flex-basis: calc(50% - 1rem);
+  margin-bottom: 1rem;
+
+  /* height: 100%; */
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  /* width: 750px;
+  height: 500px; */
+}
+
+.table-image-cell {
+  width: 15rem;
+  height: 25rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mobile-version {
+  margin-left: 20rem;
+  margin-top: 10rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  width: 100%;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar {
     column-gap: 0;
+  }
+
+  .meal-card {
+    width: calc(50% - 1rem);
+  }
+
+  .mobile-version {
+    margin-left: 0;
+    margin-top: 10rem;
+    width: calc(50% + 32px);
+  }
+
+  .table-image-cell {
+    width: 7.5rem;
+    height: 18rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .table-image-cell .thumbnail-image {
+    width: 8rem;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .table-responsive td,
+  .table-responsive th {
+    display: block;
+    width: 100%;
+    white-space: normal;
+  }
+
+  .table-responsive thead {
+    display: none;
+  }
+
+  .table-responsive tr {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 8px;
+  }
+
+  .table-responsive td::before {
+    font-weight: bold;
+    width: 30%;
   }
 }
