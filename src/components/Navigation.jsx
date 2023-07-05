@@ -8,9 +8,9 @@ const Navigation = () => {
   let title = 'Home';
 
   if (location.pathname === '/') {
-    title = 'Home';
-  } else if (location.pathname.startsWith('/meals/')) {
     title = 'Meals';
+  } else if (location.pathname.startsWith('/about/')) {
+    title = 'About';
   }
 
   return (
@@ -19,7 +19,7 @@ const Navigation = () => {
         <Nav.Link as={Link} to="/"><IoIosArrowBack fill="white" /></Nav.Link>
       </Nav>
       <Navbar.Brand className="mx-auto">
-        <p className="text-center">{title}</p>
+        <p className="text-center" style={{ height: '1rem' }}>{title}</p>
       </Navbar.Brand>
       <Nav>
         <IoIosMic fill="white" style={{ marginRight: '0.5rem' }} />

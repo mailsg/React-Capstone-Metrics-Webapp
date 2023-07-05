@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import './App.css';
+import Meals from './components/Meals';
+import MealsDetail from './components/MealsDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -8,8 +10,8 @@ function App() {
     <div className="App">
       <Navigation />
       <Routes>
-        <Route exact path="/" element={<h1>Home</h1>} />
-        <Route path="/meals" element={<h1>Meals</h1>} />
+        <Route exact path="/" element={<Meals />} />
+        <Route path="/about/:categoryId" element={<MealsDetail />} />
       </Routes>
     </div>
   );
