@@ -38,9 +38,9 @@ const Meals = () => {
         >
           <Link to={`/about/${meal.idCategory}`} className="meal-link">
 
-            <Card.Img variant="top" src={meal.strCategoryThumb} />
+            <Card.Img variant="top" src={meal.strCategoryThumb} className="small-image" />
             <Card.Body>
-              <Card.Title>{meal.strCategory}</Card.Title>
+              <Card.Title style={{ color: 'white', fontFamily: 'puritans', fontWeight: 700 }}>{meal.strCategory}</Card.Title>
             </Card.Body>
           </Link>
         </Card>
