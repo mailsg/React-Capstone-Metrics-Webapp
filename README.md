@@ -3,7 +3,7 @@
   <img src="webapp.png" alt="logo" width="120"  height="auto" />
   <br/>
 
-  <h3><b>Metrics Webapp</b></h3>
+  <h3><b>Know Your Food.. Webapp</b></h3>
 
 </div>
 
