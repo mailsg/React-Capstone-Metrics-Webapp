@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { fetchMeals, resetSearchQuery } from '../redux/slice/meals/mealsSlice';
 import SearchBox from './SearchBox';
 import '../App.css';
@@ -37,7 +38,7 @@ const Meals = () => {
           className="meal-card"
         >
           <Link to={`/about/${meal.idCategory}`} className="meal-link">
-
+            <BsArrowRightCircle className="arrow-icon" />
             <Card.Img variant="top" src={meal.strCategoryThumb} className="small-image" />
             <Card.Body>
               <Card.Title style={{ color: 'white', fontFamily: 'puritans', fontWeight: 700 }}>{meal.strCategory}</Card.Title>

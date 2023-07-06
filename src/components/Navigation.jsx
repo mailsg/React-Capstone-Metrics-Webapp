@@ -22,8 +22,8 @@ const Navigation = () => {
         <p className="text-center" style={{ height: '1rem' }}>{title}</p>
       </Navbar.Brand>
       <Nav>
-        <IoIosMic fill="white" style={{ marginRight: '0.5rem' }} />
-        <IoIosSettings fill="white" style={{ marginRight: '2rem' }} />
+        <IoIosMic fill="white" style={{ marginRight: '0.5rem', cursor: 'Pointer' }} />
+        <IoIosSettings fill="white" style={{ marginRight: '2rem', cursor: 'Pointer' }} />
       </Nav>
     </Navbar>
   );

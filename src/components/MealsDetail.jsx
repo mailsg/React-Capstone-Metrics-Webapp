@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { fetchMeals } from '../redux/slice/meals/mealsSlice';
 
 const MealsDetail = () => {
@@ -32,6 +33,7 @@ const MealsDetail = () => {
                 alt={selectedCategory.strCategory}
                 className="thumbnail-image"
               />
+              <BsArrowRightCircle className="table-arrow-icon" />
             </td>
             <td className="left-aligned"><strong>Name</strong></td>
             <td className="left-aligned">{selectedCategory.strCategory}</td>
