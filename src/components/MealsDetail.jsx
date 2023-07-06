@@ -16,6 +16,10 @@ const MealsDetail = () => {
 
   const selectedCategory = mealsList.find((meal) => meal.idCategory === categoryId);
 
+  if (!selectedCategory) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="table-responsive">
       {/* <h2>Meal Category Details</h2> */}
