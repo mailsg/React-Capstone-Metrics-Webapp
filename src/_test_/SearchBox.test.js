@@ -7,16 +7,16 @@ import store from '../redux/store';
 import SearchBox from '../components/SearchBox';
 
 describe('SearchBox', () => {
-    it('renders correctly', () => {
-        const tree = renderer
-        .create(
-            <Provider store={store}>
-            <Router>
-                <SearchBox />
-            </Router>
-            </Provider>
-        )
-        .toJSON();
-        expect(tree).toMatchSnapshot();
-    });
+  it('renders correctly', () => {
+    const tree = renderer
+      .create(
+        <Provider store={store}>
+          <Router>
+            <SearchBox />
+          </Router>
+        </Provider>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

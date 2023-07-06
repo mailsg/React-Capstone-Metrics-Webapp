@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import store from '../redux/store';
 import MealsDetail from '../components/MealsDetail';
 
@@ -12,7 +13,7 @@ class ErrorBoundary extends React.Component {
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError() {
     return { hasError: true };
   }
 
@@ -21,11 +22,14 @@ class ErrorBoundary extends React.Component {
   }
 
   render() {
-    if (this.state.hasError) {
+    const { hasError } = this.state;
+    const { children } = this.props;
+
+    if (hasError) {
       return <div>Error occurred. Please check the console for details.</div>;
     }
 
-    return this.props.children;
+    return children;
   }
 }
 
@@ -35,13 +39,17 @@ describe('MealsDetail', () => {
       .create(
         <Provider store={store}>
           <Router>
-            <ErrorBoundary> 
+            <ErrorBoundary>
               <MealsDetail />
             </ErrorBoundary>
           </Router>
-        </Provider>
+        </Provider>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
+
+ErrorBoundary.propTypes = {
+  children: PropTypes.node.isRequired,
+};

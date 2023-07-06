@@ -11,10 +11,10 @@ describe('Meals', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <Router> 
+          <Router>
             <Meals />
           </Router>
-        </Provider>
+        </Provider>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
