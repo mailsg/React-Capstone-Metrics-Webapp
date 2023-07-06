@@ -104,6 +104,13 @@ body {
   font-style: normal;
 }
 
+.arrow-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: darkblue;
+}
+
 @media only screen and (min-width: 768px) {
   .meal-card .small-image {
     width: 24rem;
@@ -112,6 +119,13 @@ body {
 
   .table {
     width: 50rem !important;
+  }
+
+  .table-arrow-icon {
+    position: absolute;
+    right: 28rem;
+    top: 22rem;
+    cursor: pointer;
   }
 }
 
@@ -155,5 +169,18 @@ body {
     height: 18rem;
     text-align: center;
     vertical-align: middle;
+  }
+
+  .arrow-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: darkblue;
+  }
+
+  .table-arrow-icon {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
   }
 }

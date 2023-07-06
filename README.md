@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img src="metrics_app_logo.png" alt="logo" width="120"  height="auto" />
+  <img src="webapp.png" alt="logo" width="120"  height="auto" />
   <br/>
 
   <h3><b>Metrics Webapp</b></h3>
@@ -32,9 +32,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Metrics Webapp <a name="about-project"></a>
+# 📖 Know Your Food.. Webapp <a name="about-project"></a>
 
-**Metrics Webapp** is a mobile web application to check a list of metrics making use of React and Redux.
+**Know Your Food.. Webapp** is a mobile web application to check about a list of foods making use of React and Redux.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,7 +58,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Metrices**
+- **About Foods**
 - **API DATA**
 - **News**
 
@@ -132,8 +132,8 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Related Community**
-- [ ] **News from all over the world about the topic**
+- [ ] **Food Community**
+- [ ] **News from all over the world about Food**
 - [ ] **Profile Section**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
