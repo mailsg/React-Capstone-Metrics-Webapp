@@ -66,9 +66,11 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live & Presentation Links <a name="live-demo"></a>
 
 - [Live Demo Link](https://know-your-food.onrender.com)
+
+- [Video Presentation](https://www.loom.com/share/9ea3d289e70048bca97325bb091e414f?sid=83057511-3783-4130-9ff2-e721ab21f28b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
